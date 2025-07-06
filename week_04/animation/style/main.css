@@ -1,0 +1,87 @@
+* {
+  font-family: "Pretendard Variable";
+  box-sizing: border-box;
+  line-height: 100%;
+}
+
+.practice {
+  --point-color: #b31116;
+  --font-color: #1d1316;
+  --white-color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 260px;
+
+  .animation-text {
+    .text__logotitle {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--point-color);
+      margin-bottom: 30px;
+    }
+
+    .text__bigtitle {
+      font-size: 70px;
+      font-weight: 700;
+      color: var(--point-color);
+      margin-bottom: 60px;
+
+      span {
+        display: block;
+        line-height: 1.2;
+
+        &.thin {
+          font-weight: 100;
+        }
+      }
+    }
+
+    .text__description {
+      font-size: 20px;
+      font-weight: 350;
+      line-height: 1.4;
+      color: var(--font-color);
+      margin-bottom: 60px;
+    }
+
+    .text__link {
+      display: flex;
+      gap: 10px;
+
+      a {
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 12px 36px;
+        border-radius: 500px;
+
+        &.link__black {
+          color: var(--font-color);
+          border: 1px solid var(--font-color);
+
+          &:hover {
+            background-color: var(--font-color);
+            color: var(--white-color);
+          }
+        }
+
+        &.link__red {
+          color: var(--point-color);
+          border: 1px solid var(--point-color);
+
+          &:hover {
+            background-color: var(--point-color);
+            color: var(--white-color);
+          }
+        }
+      }
+    }
+  }
+
+  svg {
+    width: auto;
+    height: 700px;
+  }
+}

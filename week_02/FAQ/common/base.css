@@ -1,0 +1,17 @@
+/* 기본 스타일 */
+body {
+  font-family: 'SUIT Variable', sans-serif;
+}
+
+/* 하이퍼링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* svg 이미지 */
+/* svg 요소에 svg-img 클래스가 선언 된 경우 */
+.svg-img {
+  inline-size: 100%;
+  block-size: auto;
+}
