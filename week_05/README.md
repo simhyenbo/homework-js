@@ -14,7 +14,7 @@ const searchInput = typeahead.querySelector('[type="search"]')
 const predictionList = typeahead.querySelector("ul")
 ```
 
-> - 각 html 요소들을 변수에 할당했다.
+> - 각 `html` 요소들을 변수에 할당했다.
 
 ```js
 searchInput.addEventListener("input", (e) => {
@@ -26,9 +26,10 @@ searchInput.addEventListener("input", (e) => {
 })
 ```
 
-> - 이벤트리스너가 작동할 때마다 ul요소 내부의 값을 초기화시킨다.
+> - 이벤트리스너가 작동할 때마다 `ul`요소 내부의 값을 초기화시킨다.
 > - 인풋요소에 이벤트리스터를 연결 후 입력값을 담을 변수를 설정했다.
-> - COUNTRIES 배열의 **name값이 인풋에 입력한 값으로 시작하는 객체들을 필터링**을 한 후 **name의 값만 추출해서 새로운 배열로 생성**헸다.
+> - COUNTRIES 배열의 **name값이 인풋에 입력한 값으로 시작하는 객체들을 필터링**을 한 후
+>   **name의 값만 추출해서 새로운 배열로 생성**헸다.
 
 ```js
 searchInput.addEventListener("input", (e) => {
@@ -63,10 +64,10 @@ searchInput.addEventListener("input", (e) => {
 })
 ```
 
-> - searchedList 배열을 순환(reduce)하여 li 태그가 추가된 텍스트로 변환했다.
-> - 이때 **boldSearchTerms()**함수를 사용하여 입력한 값의 길이만큼 볼드체로 변환했다.
-> - li태그가 추가된 텍스트를 **innerHTML**을 사용하여 ul요소에 추가했다.
-> - ul요소의 **hidden** 속성은 제거했다.
+> - searchedList 배열을 `reduce` 순환하여 li 태그가 추가된 텍스트로 변환했다.
+> - 이때 `boldSearchTerms()`함수를 사용하여 입력한 값의 길이만큼 볼드체로 변환했다.
+> - li태그가 추가된 텍스트를 `innerHTML`을 사용하여 ul요소에 추가했다.
+> - ul요소의 `hidden` 속성은 제거했다.
 
 ```js
 searchInput.addEventListener("input", (e) => {
@@ -103,7 +104,7 @@ predictionList.addEventListener("click", (e) => {
 가장 쉬운 난이도라고 생각했지만 작업 시간은 많이 소요됐다.
 해설이 다 나와 있는 것을 보면서 해도 이것을 이해하는 데 시간이 걸렸다.
 이번 과제에서는 **배열의 순환, 이벤트 리스너, 조건문의 빠른 반환, 객체 구조 분해**햐에 대해 복습하는 시간이었다.
-그리고 여전히 생소한 **startsWith()**와 **substring()** 메서드에 대해 오래 기억하기 위해 한 번 더 작성해본다.
+그리고 여전히 생소한 `startsWith()`와 `substring()` 메서드에 대해 오래 기억하기 위해 한 번 더 작성해본다.
 
 앞으로 갈 길이 멀었다는 생각이 든다.
 요즘 더운 날씨 탓인지, 공부 기간이 길어진 탓인지 많이 지쳐가는 것 같다.
